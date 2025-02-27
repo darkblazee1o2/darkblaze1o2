@@ -1,6 +1,102 @@
+.uperline {
+  border: solid;
+  color: white;
+
+  min-height: 50px;
+  min-width: 50px;
+  display: flex;
+  border-radius: 50px;
+}
+.search {
+  margin: 8px;
+  padding: 8px;
+
+  border-radius: 20px;
+  display: flex;
+
+  width: 10%;
+  transition: 0.3s ease;
+}
+.search:hover {
+  width: 20%;
+}
+#support {
+  top: 13px;
+  left: 80px;
+  display: flex;
+  position: relative;
+
+  color: white;
+  font-family: bold;
+}
+#home {
+  top: -5px;
+  left: 20px;
+  display: flex;
+  position: relative;
+
+  color: white;
+  font-family: bold;
+}
+.login {
+  position: relative;
+  left: 87%;
+
+  font-size: 20px;
+  background-color: rgb(255, 215, 113);
+  border-radius: 30px;
+  transition: 0.3s ease;
+
+  top: 10px;
+  animation-duration: 2s;
+  animation-name: hober;
+  animation-timing-function: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.login:hover {
+  transform: scale(1.5);
+
+  
+}
+@keyframes hober {
+  0% {
+
+    color: blue;
+    border-color: blue;
+  }
+  25% {
+
+    color: green;
+    border-color: green;
+  }
+  50% {
+
+    color: yellow;
+    border-color: yellow;
+  }
+  100% {
+
+    color: red;
+    border-color: red;
+  }
+}
+.uper {
+  flex-grow: 1;
+  
+  border: solid;
+
+  margin: 8px;
+  padding: 8px;
+}
+
 body {
   align-items: center;
   align-self: center;
+
+  background-image: url(backround.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .cards {
   width: 130px;
@@ -28,7 +124,7 @@ img {
   max-width: 200px;
   max-height: 200px;
 
-  margin-left: 40%;
+  margin-left: 43%;
   overflow: hidden;
   border-radius: 30%;
   background-color: rgb(247, 9, 172);
@@ -44,4 +140,89 @@ img {
   100% {
     transform: translateX(-230%);
   }
+}
+
+.container1, .line1 {
+  border: solid;
+  display: flex;
+
+  flex-grow: 1;
+
+  min-width: 50px;
+  min-height: 50px;
+  
+
+  margin: 4px;
+  padding: 4px;
+
+}
+
+.line1to {
+  transition: 0.3s ease;
+}
+.line1to:hover {
+  margin: 50px;
+
+  transform: scale(1.5);
+}
+.img1 {
+  width: 90%;
+  height: 300px;
+
+  display: flex;
+  position: relative;
+  flex-grow: 1;
+
+  animation-name: fade;
+  animation-duration: 3s;
+  animation-direction: ease;
+}
+.column {
+  flex-direction: column;
+}
+
+.hide {
+  border: none;
+
+  margin: 0px;
+  padding: 0px;
+}
+h1 , p {
+  color: rgb(255, 255, 255);
+}
+h1  {
+  animation-name: fade;
+  animation-duration: 3s;
+  animation-direction: ease;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+.par {
+  animation-name: eslide;
+  animation-duration: 3s;
+  animation-direction: ease;
+
+  flex-grow: 0;
+}
+
+@keyframes eslide {
+  0% {
+    opacity: 0%;
+    transform: translateX(10%);
+  }
+  100% {
+    opacity: 100%;
+    transform: translateX(0%);
+  }
+}
+.try {
+  max-width: 50%;
 }
