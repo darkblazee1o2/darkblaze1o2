@@ -16,10 +16,18 @@
 
   width: 10%;
   transition: 0.3s ease;
+  width: 50px;
 }
 .search:hover {
   width: 20%;
 }
+.links {
+  width: 50px;
+}
+#home:hover {
+  color: yellow;
+}
+
 #support {
   top: 13px;
   left: 80px;
@@ -28,6 +36,9 @@
 
   color: white;
   font-family: bold;
+}
+#support:hover {
+  color: yellow;
 }
 #home {
   top: -5px;
@@ -40,7 +51,7 @@
 }
 .login {
   position: relative;
-  left: 87%;
+  left: 84%;
 
   font-size: 20px;
   background-color: rgb(255, 215, 113);
